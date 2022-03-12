@@ -7,5 +7,3 @@ node_modules
 
 # webpack build dir
 dist
-
-/server/config/*
