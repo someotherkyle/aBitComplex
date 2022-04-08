@@ -1,9 +1,11 @@
-require('dotenv').config()
-const express = require('express')
-const session = require('express-session')
+import dotenv from 'dotenv'
+dotenv.config()
+import express from 'express'
+import session from 'express-session'
+import cors from 'cors'
+
 const app = express()
-const cors = require('cors')
-const PORT = process.env.LISTEN_PORT || 8080
+const PORT = process.env.LISTEN_PORT || 8081
 
 app.use(cors({ origin: 'http://localhost:8081' }))
 app.use(express.json())
